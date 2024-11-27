@@ -1,4 +1,4 @@
-/ Contadores dinâmicos document.querySelectorAll('.counter').forEach(counter => { const updateCounter = () => { const target = +counter.getAttribute('data-target'); const count = +counter.innerText; const increment = target / 100; if (count < target) { counter.innerText = Math.ceil(count + increment); setTimeout(updateCounter, 30); } else { counter.innerText = target; } }; updateCounter(); });
+// Efeito de escala nos blocos de serviços document.querySelectorAll('.servico').forEach(servico => { servico.addEventListener('mouseenter', () => { servico.style.transform = 'scale(1.1)'; }); servico.addEventListener('mouseleave', () => { servico.style.transform = 'scale(1)'; }); });
 
 
 
