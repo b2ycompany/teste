@@ -251,17 +251,12 @@ header .logo:hover {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    position: absolute;
-    top: -30px;
-    left: 20px;
+    margin-bottom: 10px;
 }
 
-.depoimento p {
-    margin-top: 30px;
-    text-align: left;
-}
 
 .stars {
+    font-size: 1.2rem;
     margin-top: 10px;
     color: #f5c542;
 }
