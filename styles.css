@@ -25,6 +25,9 @@ a {
 
 header {
     position: fixed;
+    body {
+        padding-top: 100px;
+    }
     top: 0;
     left: 0;
     right: 0;
@@ -112,6 +115,7 @@ header .logo:hover {
 /* Estilo da seção Hero */
 .hero {
     height: 100vh;
+    padding-top: 100px;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('https://b2ycompany.github.io/teste/assets/header-bg.jpg') no-repeat center/cover;
     display: flex;
     justify-content: center;
@@ -386,10 +390,9 @@ button[type="submit"]:hover {
 
 /* Ajustes para responsividade */
 @media (max-width: 768px) {
-    .info-contato {
+    .menu {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        gap: 10px.
     }
 
     .mapa-container {
@@ -486,6 +489,10 @@ footer p {
     }
 
     .depoimentos-carrossel {
+        display: flex;
+        overflow-x: auto;
+        padding: 10px;
+        scrollbar-width: none;
         gap: 10px;
         /* Diminui o espaço entre os depoimentos */
     }
@@ -564,6 +571,10 @@ footer p {
             height: 300px;
             /* Ajuste para um tamanho mais responsivo */
         }
+            iframe    {
+                width: 100%;
+                height: 100%;
+            }
     
         @media (max-width: 768px) {
             .mapa-container {
