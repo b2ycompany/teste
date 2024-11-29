@@ -265,7 +265,60 @@ header .logo:hover {
     margin-top: 10px;
     color: #f5c542;
 }
+.formulario {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    margin: 0 auto;
+}
 
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    color: #d4af37;
+    font-weight: bold;
+}
+
+.input-group input,
+.input-group textarea {
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #d4af37;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: #d4af37;
+    color: #111;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: #f5c542;
+}
 /* Nosso Time */
 .nosso-time {
     padding: 80px 20px;
@@ -358,5 +411,74 @@ footer p {
     font-size: 1rem;
 }
 
+/* Estilo para telas menores que 768px (tablets e smartphones) */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+        /* Reduz o tamanho do texto */
+    }
 
+    .hero p {
+        font-size: 1rem;
+    }
 
+    .menu {
+        flex-direction: column;
+        /* Empilha o menu verticalmente */
+        gap: 10px;
+    }
+
+    .servico-blocos {
+        grid-template-columns: 1fr;
+        /* Exibe uma única coluna */
+    }
+
+    .equipe {
+        grid-template-columns: 1fr;
+        /* Exibe membros em uma única coluna */
+    }
+
+    .depoimentos-carrossel {
+        gap: 10px;
+        /* Diminui o espaço entre os depoimentos */
+    }
+
+    .contato-container {
+        flex-direction: column;
+        /* Empilha o formulário e as informações */
+    }
+
+    iframe {
+        height: 150px;
+        /* Ajusta a altura do mapa */
+    }
+}
+
+/* Estilo para telas menores que 480px (smartphones pequenos) */
+@media (max-width: 480px) {
+    header .logo {
+        width: 80px;
+        /* Reduz o tamanho do logo */
+        height: 80px;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+        /* Reduz ainda mais o texto */
+    }
+
+    .menu {
+        font-size: 0.9rem;
+        /* Reduz o tamanho do texto do menu */
+    }
+
+    .servico h3,
+    .membro h3 {
+        font-size: 1rem;
+    }
+
+    .contato-container iframe {
+        width: 100%;
+        height: 120px;
+    }
+}
