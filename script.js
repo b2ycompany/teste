@@ -1,5 +1,5 @@
 // Função para atualizar os contadores de processos 
-function updateCounters() { animateCounter(document.getElementById('novos'), 0, 5, 1000); animateCounter(document.getElementById('andamento'), 0, 3, 1000); animateCounter(document.getElementById('concluidos'), 0, 8, 1000); } 
+function updateCounters() { animateCounter(document.getElementById('novos'), 0, 38, 1000); animateCounter(document.getElementById('andamento'), 0, 120, 1000); animateCounter(document.getElementById('concluidos'), 0, 960, 1000); } 
 // Função para animação do contador 
 function animateCounter(element, start, end, duration) { let startTime = null; function step(timestamp) { if (!startTime) startTime = timestamp; const progress = Math.min((timestamp - startTime) / duration, 1); element.textContent = Math.floor(progress * (end - start) + start); if (progress < 1) { window.requestAnimationFrame(step); } } window.requestAnimationFrame(step); } 
 // Função para o carrossel de depoimentos 
